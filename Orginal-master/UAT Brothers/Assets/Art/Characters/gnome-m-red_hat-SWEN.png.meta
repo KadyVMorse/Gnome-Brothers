@@ -1,46 +1,43 @@
 fileFormatVersion: 2
-guid: 0fda0a5ec81cf27498d3fff77a81ec67
+guid: 534456410804dc84b9602dd50939966f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1359338012782385656
-    second: preview-red_0
+      213: -7408974189136080507
+    second: gnome-m-red_hat-SWEN_0
   - first:
-      213: -1154062906047857025
-    second: preview-red_1
+      213: -8089556904395320671
+    second: gnome-m-red_hat-SWEN_1
   - first:
-      213: 1950937068846626972
-    second: preview-red_2
+      213: 970845925280867142
+    second: gnome-m-red_hat-SWEN_2
   - first:
-      213: 4160051818651279434
-    second: preview-red_3
+      213: -7296880157869823687
+    second: gnome-m-red_hat-SWEN_3
   - first:
-      213: -4704205982678309499
-    second: preview-red_4
+      213: -4663058018776572514
+    second: gnome-m-red_hat-SWEN_4
   - first:
-      213: -7260268284632295323
-    second: preview-red_5
+      213: -954094559994704901
+    second: gnome-m-red_hat-SWEN_5
   - first:
-      213: -379669273598201561
-    second: preview-red_6
+      213: 43775710930549935
+    second: gnome-m-red_hat-SWEN_6
   - first:
-      213: 8689289060347018004
-    second: preview-red_7
+      213: -6698258600736886102
+    second: gnome-m-red_hat-SWEN_7
   - first:
-      213: 3607628821688110771
-    second: preview-red_8
+      213: 868642164958427868
+    second: gnome-m-red_hat-SWEN_8
   - first:
-      213: 6445161411984600453
-    second: preview-red_9
+      213: -1163230796565423122
+    second: gnome-m-red_hat-SWEN_9
   - first:
-      213: -601677339671828241
-    second: preview-red_10
+      213: -5810332901383782852
+    second: gnome-m-red_hat-SWEN_10
   - first:
-      213: -4335136454604800831
-    second: preview-red_11
-  - first:
-      213: -6941876006153231802
-    second: preview-red_12
+      213: -8126579275944545645
+    second: gnome-m-red_hat-SWEN_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -149,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: preview-red_0
+      name: gnome-m-red_hat-SWEN_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 217
-        width: 45
-        height: 58
+        x: 17
+        y: 192
+        width: 13
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5da5d85cde75740478a0e3b668bb0e86
-      internalID: -1359338012782385656
+      spriteID: 8a2f331e5d37b244d89b48a2d748513f
+      internalID: -7408974189136080507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_1
+      name: gnome-m-red_hat-SWEN_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 219
-        width: 45
-        height: 59
+        x: 65
+        y: 193
+        width: 14
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f19696c68e724419d5e65416030b79
-      internalID: -1154062906047857025
+      spriteID: b02268361e0f56842a7a4b92c576f173
+      internalID: -8089556904395320671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_2
+      name: gnome-m-red_hat-SWEN_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 217
-        width: 45
-        height: 58
+        x: 114
+        y: 192
+        width: 13
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d85ed7990ff4f62479ad697d46082d12
-      internalID: 1950937068846626972
+      spriteID: c2c53769a5c18f645b68dcea8a9fe992
+      internalID: 970845925280867142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_3
+      name: gnome-m-red_hat-SWEN_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 153
-        width: 40
-        height: 60
+        x: 18
+        y: 128
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 804de191aee759d41b8f36b15ef768b6
-      internalID: 4160051818651279434
+      spriteID: 30ca01178badb9445af81b8861f9e75a
+      internalID: -7296880157869823687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_4
+      name: gnome-m-red_hat-SWEN_4
       rect:
         serializedVersion: 2
-        x: 55
-        y: 153
-        width: 35
-        height: 61
+        x: 67
+        y: 129
+        width: 13
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ed20686593ea27428f7d2bd4fb64428
-      internalID: -4704205982678309499
+      spriteID: 619e3204839151b4b9b3027b38e9ba22
+      internalID: -4663058018776572514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_5
+      name: gnome-m-red_hat-SWEN_5
       rect:
         serializedVersion: 2
-        x: 103
-        y: 153
-        width: 36
-        height: 60
+        x: 114
+        y: 128
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da77dffad911577458d15e99626ff47c
-      internalID: -7260268284632295323
+      spriteID: c0f3300f574a14742b6c26148a0efe81
+      internalID: -954094559994704901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_6
+      name: gnome-m-red_hat-SWEN_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 89
-        width: 45
-        height: 58
+        x: 16
+        y: 64
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6218cf632d55e7f46a9d1e29595cf4a5
-      internalID: -379669273598201561
+      spriteID: 596916f8d1ff77a42983123f79199453
+      internalID: 43775710930549935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_7
+      name: gnome-m-red_hat-SWEN_7
       rect:
         serializedVersion: 2
-        x: 49
-        y: 91
-        width: 45
-        height: 59
+        x: 64
+        y: 65
+        width: 13
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36fecbd1320c92f4d89394061179587b
-      internalID: 8689289060347018004
+      spriteID: 2c67ae4cfa2120744af12ec465ec83d1
+      internalID: -6698258600736886102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_8
+      name: gnome-m-red_hat-SWEN_8
       rect:
         serializedVersion: 2
-        x: 97
-        y: 89
-        width: 45
-        height: 58
+        x: 112
+        y: 64
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,83 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3606e7b964341f541b7d5fab1fc252df
-      internalID: 3607628821688110771
+      spriteID: 733f60329e1241d49bd1a0822453f929
+      internalID: 868642164958427868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: preview-red_9
+      name: gnome-m-red_hat-SWEN_9
       rect:
         serializedVersion: 2
-        x: 5
-        y: 25
-        width: 36
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d0ad4c6dd151d643b73ff0aa1259f9b
-      internalID: 6445161411984600453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: preview-red_10
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 25
-        width: 35
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af2cb5c9f0d561c4684fc2c0bb8ab609
-      internalID: -601677339671828241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: preview-red_11
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 25
-        width: 40
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 890fbdfedfe20e84b941a69953ec55d0
-      internalID: -4335136454604800831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: preview-red_12
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 17
         y: 0
-        width: 120
-        height: 20
+        width: 13
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +349,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76adfd4146a65384e945424d81279b4c
-      internalID: -6941876006153231802
+      spriteID: bc11b4c666b412b4ea0b315812770a5f
+      internalID: -1163230796565423122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome-m-red_hat-SWEN_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ccc707e7eb3914ba7126407a6b159b
+      internalID: -5810332901383782852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gnome-m-red_hat-SWEN_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d324cb5500ee3644925ab9ce70c55a3
+      internalID: -8126579275944545645
       vertices: []
       indices: 
       edges: []
