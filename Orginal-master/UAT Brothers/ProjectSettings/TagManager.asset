@@ -11,6 +11,7 @@ TagManager:
   - Pause
   - tree
   - Spike
+  - Enemy
   layers:
   - Default
   - TransparentFX
