@@ -52,8 +52,9 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        //Relods to the begining
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Loads Main Menu
+
+        SceneManager.LoadScene(0); 
     }
 
     public void Quit()

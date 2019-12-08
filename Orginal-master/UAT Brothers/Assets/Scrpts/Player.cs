@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     private gameMaster gm;
     public Transform wallCheckpoint;
     public LayerMask walllayerMask;
+ 
 
 
     // Start is called before the first frame update
