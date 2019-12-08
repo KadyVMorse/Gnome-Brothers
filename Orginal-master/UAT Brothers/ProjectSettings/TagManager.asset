@@ -12,6 +12,7 @@ TagManager:
   - tree
   - Spike
   - Enemy
+  - Platform
   layers:
   - Default
   - TransparentFX
