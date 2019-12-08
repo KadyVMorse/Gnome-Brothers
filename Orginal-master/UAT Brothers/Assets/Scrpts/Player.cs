@@ -15,6 +15,11 @@ public class Player : MonoBehaviour
     //Booleans
     public bool grounded;
     public bool canDoubleJump;
+    public bool canMove;
+    public bool wallSliding;
+    public bool wallCheck;
+    public bool facingRight = true;
+
 
     //Stats
     public int curHealth;
@@ -24,6 +29,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator anim;
     private gameMaster gm;
+    public Transform wallCheckpoint;
+    public LayerMask walllayerMask;
 
 
     // Start is called before the first frame update
@@ -36,27 +43,37 @@ public class Player : MonoBehaviour
         //current health is equal to the max health 
         curHealth = maxHealth;
         //Finds the componet of Game Master
-        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>(); 
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
+
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //Setting the boolen of Grounded and Speed
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
+        if (!canMove)
+        {
+            rb2d.velocity = Vector2.zero;
+            return;
+        }
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            facingRight = false;
         }
 
         if (Input.GetAxis("Horizontal") > 0.1f)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            facingRight = true;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !wallSliding)
         {
             if (grounded)
             {
@@ -86,15 +103,61 @@ public class Player : MonoBehaviour
         {
             Die();
         }
+        if (!grounded)
+        {
+            wallCheck = Physics2D.OverlapCircle(wallCheckpoint.position, 0.1f, walllayerMask);
+            
+            if(facingRight && Input.GetAxis("Horizontal")> 0.1f || !facingRight && Input.GetAxis("Horizontal") <0.1f)
+            {
+                if (wallCheck)
+                {
+                    HandleWallSliding();
+                }
+            }
+
+        }
+        if(wallCheck == false || grounded)
+        {
+            wallSliding = false;
+        }
+    }
+
+    void HandleWallSliding()
+    {
+        rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
+
+
+        wallSliding = true;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (facingRight)
+            {
+                rb2d.AddForce(new Vector2(-1.5f, 3) * jumpPower);
+            }
+            else
+            {
+                rb2d.AddForce(new Vector2(1.5f, 3) * jumpPower);
+            }
+        }
 
     }
+
+
 
     void FixedUpdate()
     {
         float h = Input.GetAxis("Horizontal");
-        
+
         //moving the player
-        rb2d.AddForce((Vector2.right * speed) * h);
+        if (grounded)
+        {
+            rb2d.AddForce((Vector2.right * speed) * h);
+        }
+        else
+        {
+            rb2d.AddForce((Vector2.right * speed/2) * h);
+        }
 
         //Limiting the Speed oof the player
         if(rb2d.velocity.x > maxSpeed)
