@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         //Finds the componet of Game Master
         gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
 
-        canMove = true;
+        
     }
 
     // Update is called once per frame
@@ -57,11 +57,7 @@ public class Player : MonoBehaviour
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 
-        if (!canMove)
-        {
-            rb2d.velocity = Vector2.zero;
-            return;
-        }
+        
         if (Input.GetAxis("Horizontal") < -0.1f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
