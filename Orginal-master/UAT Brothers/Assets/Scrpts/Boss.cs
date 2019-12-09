@@ -18,6 +18,7 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Dragon");
         anim = GetComponent<Animator>();
     }
 

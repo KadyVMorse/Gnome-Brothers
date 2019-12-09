@@ -898,6 +898,36 @@ PrefabInstance:
       propertyPath: sounds.Array.data[3].pitch
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4366348950548387895, guid: 65a2807830bdf3e4d92699bfe2d9fc65,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366348950548387895, guid: 65a2807830bdf3e4d92699bfe2d9fc65,
+        type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Mini
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366348950548387895, guid: 65a2807830bdf3e4d92699bfe2d9fc65,
+        type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bfc4f64021928374395e94553cd209c3, type: 3}
+    - target: {fileID: 4366348950548387895, guid: 65a2807830bdf3e4d92699bfe2d9fc65,
+        type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366348950548387895, guid: 65a2807830bdf3e4d92699bfe2d9fc65,
+        type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366348950548387895, guid: 65a2807830bdf3e4d92699bfe2d9fc65,
+        type: 3}
+      propertyPath: sounds.Array.data[4].loop
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65a2807830bdf3e4d92699bfe2d9fc65, type: 3}
 --- !u!1001 &414576314
@@ -1820,7 +1850,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1170036386
 MonoBehaviour:

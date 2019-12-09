@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5398833938962130002
+--- !u!1 &4104196857625095316
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5398833938962130092}
-  - component: {fileID: 5398833938962130093}
+  - component: {fileID: 4338774006803439775}
+  - component: {fileID: 4366348950548387895}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5398833938962130092
+--- !u!4 &4338774006803439775
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5398833938962130002}
+  m_GameObject: {fileID: 4104196857625095316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.7809634, y: -1.7446045, z: -6.448283}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2263, y: 1.2263, z: 1.2263}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5398833938962130093
+--- !u!114 &4366348950548387895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5398833938962130002}
+  m_GameObject: {fileID: 4104196857625095316}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb2362be598e97b4d88d6dd59e64fd91, type: 3}
@@ -55,4 +55,16 @@ MonoBehaviour:
     volume: 4.32
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Gem
+    clip: {fileID: 8300000, guid: 1616db1d35b9bb24daad7f0bd3d9d966, type: 3}
+    volume: 4.63
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerHit
+    clip: {fileID: 8300000, guid: 7eee5420cba6c334482a6ffcb833b7d0, type: 3}
+    volume: 4.11
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
