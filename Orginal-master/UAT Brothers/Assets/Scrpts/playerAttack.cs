@@ -4,43 +4,39 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
-    private bool attacking = false;
+    private float timeBtwAttack;
+    public float startTimeBtwAttack;
 
-    private float attackTimer = 0;
-    private float attackCd = 0.3f;
+    public Transform attackPos;
+    public LayerMask whatIsEnemies;
+    public float attackRange;
+    public int damage;
 
-    public Collider2D attackTrigger;
 
-    private Animator anim;
 
-    void Awake()
+    void Update()
     {
-        anim = gameObject.GetComponent<Animator>();
-        attackTrigger.enabled = false;
+        if (timeBtwAttack <= 0)
+        {
+            //Then player willl attack
+            if (Input.GetKey(KeyCode.Backspace))
+            {
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    enemiesToDamage[i].GetComponent<Boss>().TakeDamage(damage);
+                }
+            }timeBtwAttack = startTimeBtwAttack;
+        }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
+        }
+
     }
-
-     void Update()
+     void OnDrawGizmosSelected()
     {
-        if(Input.GetKeyDown("x") && !attacking)
-        {
-            attacking = true;
-            attackTimer = attackCd;
-
-            attackTrigger.enabled = true;
-        }
-        if (attacking)
-        {
-            if(attackTimer > 0)
-            {
-                attackTimer -= Time.deltaTime;
-            }
-            else
-            {
-                attacking = false;
-                attackTrigger.enabled = false;
-            }
-        }
-
-        anim.SetBool("Attacking", attacking);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 }

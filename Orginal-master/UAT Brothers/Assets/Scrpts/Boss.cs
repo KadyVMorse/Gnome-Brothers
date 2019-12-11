@@ -56,7 +56,7 @@ public class Boss : MonoBehaviour
             }
         }
     }
-    public void Damage(int damage)
+    public void TakeDamage (int damage)
     {
         health -= damage;
         gameObject.GetComponent<Animation>().Play("Player_Attack");

@@ -747,7 +747,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Attack : x'
+  m_Text: 'Attack : Backspace'
 --- !u!222 &675112208
 CanvasRenderer:
   m_ObjectHideFlags: 0
