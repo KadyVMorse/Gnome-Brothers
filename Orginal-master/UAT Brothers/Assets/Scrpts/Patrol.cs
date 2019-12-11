@@ -12,7 +12,12 @@ public class Patrol : MonoBehaviour
 
     public Transform groundDetection;
 
-     void Update()
+     void Start()
+        //plays mini minotaur noiseat begginning of game
+    {
+        FindObjectOfType<AudioManager>().Play("Mini");
+    }
+    void Update()
     {
         //creats a ray cast and ground check so it can patrol only that area
         transform.Translate(Vector2.right * speed * Time.deltaTime);
