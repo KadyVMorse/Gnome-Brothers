@@ -100,6 +100,8 @@ public class Player : MonoBehaviour
         {
             Die();
         }
+
+        //Checks the player if he grounded and makes the player slide on the wall if he is not 
         if (!grounded)
         {
             wallCheck = Physics2D.OverlapCircle(wallCheckpoint.position, 0.1f, walllayerMask);
@@ -119,6 +121,8 @@ public class Player : MonoBehaviour
         }
     }
 
+
+    //If is wallsliding is true then force and physics will apply to the wall
     void HandleWallSliding()
     {
         rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);

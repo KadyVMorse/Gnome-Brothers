@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
+    //speed and distance of patrol
     public float speed;
     public float distance;
 
@@ -13,6 +14,7 @@ public class Patrol : MonoBehaviour
 
      void Update()
     {
+        //creats a ray cast and ground check so it can patrol only that area
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down , distance);

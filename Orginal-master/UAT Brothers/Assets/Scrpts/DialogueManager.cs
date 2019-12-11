@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
-
+    //creates a text box
     public GameObject dBox;
     public Text dText;
 
@@ -18,12 +18,14 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //finds the player 
         theplayer = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if the player hits the down arrow the dialouge box will pop up
         if (dialogActive && Input.GetKeyDown(KeyCode.DownArrow))
         {
             //dBox.SetActive(false);
@@ -41,6 +43,7 @@ public class DialogueManager : MonoBehaviour
         }
         dText.text = dialogLines[currentLine];
     }
+    //shows the dialouge in inspector that you can edit
     public void ShowBox(string dialogue)
     {
         dialogActive = true;

@@ -14,6 +14,7 @@ public class FallingPlantform : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    //platform will fall when detects player
      void OnCollisionEnter2D(Collision2D col)
     {
         if (col.collider.CompareTag("Player"))
@@ -22,6 +23,7 @@ public class FallingPlantform : MonoBehaviour
         }
     }
 
+    //it will wait a few seconds before it actually falls
     IEnumerator Fall()
     {
         yield return new WaitForSeconds(fallDelay);

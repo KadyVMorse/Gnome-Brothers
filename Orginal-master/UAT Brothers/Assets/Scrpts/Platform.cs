@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-
+    //moves the platform to a certain postion and speed
     public Transform pos1, pos2;
     public float speed;
     public Transform startPos;
@@ -12,6 +12,7 @@ public class Platform : MonoBehaviour
     Vector3 nextPos;
 
     // Start is called before the first frame update
+    //platform goes to next postion
     void Start()
     {
         nextPos = startPos.position;
@@ -31,6 +32,7 @@ public class Platform : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
     }
+    //draws gizmo in editor so you can edit it
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(pos1.position, pos2.position);

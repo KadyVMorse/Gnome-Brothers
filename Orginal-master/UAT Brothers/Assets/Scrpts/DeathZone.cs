@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class DeathZone : MonoBehaviour
 {
-
+    //kills player when he enters the trigger
         void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);

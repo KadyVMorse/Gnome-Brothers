@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerAttack : MonoBehaviour
 {
+    //created a timer so player couldn't spam attacking
     private float timeBtwAttack;
     public float startTimeBtwAttack;
 
@@ -16,6 +17,7 @@ public class playerAttack : MonoBehaviour
 
     void Update()
     {
+        //if there is no restranits then the player wiill attack
         if (timeBtwAttack <= 0)
         {
             //Then player willl attack
@@ -28,12 +30,14 @@ public class playerAttack : MonoBehaviour
                 }
             }timeBtwAttack = startTimeBtwAttack;
         }
+        //The timer will stop the player from attacking 
         else
         {
             timeBtwAttack -= Time.deltaTime;
         }
 
     }
+    //creates a gizmo in inspector so you edit the attack range and postion
      void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;

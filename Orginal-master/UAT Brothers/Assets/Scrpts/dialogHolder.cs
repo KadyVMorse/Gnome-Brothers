@@ -13,15 +13,14 @@ public class dialogHolder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Finds the dialouge manager at the beggining of the game
         dMAn = FindObjectOfType<DialogueManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+   
+
+    // Player enters the collider it will show dialouge whenever the player presses the down arrow
      void OnTriggerStay2D(Collider2D other)
     {
         if(other.gameObject.name == "Player")

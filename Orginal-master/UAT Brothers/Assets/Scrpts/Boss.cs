@@ -24,12 +24,12 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
-
+        //Plays stage two if the health is lower than 25
         if (health <= 25)
         {
             anim.SetTrigger("stageTwo");
         }
-
+        //Plays death animation if there iis no health
         if (health <= 0)
         {
             anim.SetTrigger("death");
@@ -40,7 +40,7 @@ public class Boss : MonoBehaviour
         {
             timeBtwDamage -= Time.deltaTime;
         }
-
+        //gives the health bar a value
         healthBar.value = health;
     }
 
@@ -58,7 +58,8 @@ public class Boss : MonoBehaviour
     }
     public void TakeDamage (int damage)
     {
+        //it will take damage from the player
         health -= damage;
-        gameObject.GetComponent<Animation>().Play("Player_Attack");
+        
     }
 }

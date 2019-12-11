@@ -18,7 +18,7 @@ public class Spikes : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        // On triger with the spikes the player will take 3 damage and move 
+        // On triger with the spikes the player will take 1 damage and move 
         if (col.CompareTag("Player"))
         {
             player.Damage(1);
