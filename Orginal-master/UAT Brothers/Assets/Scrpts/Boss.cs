@@ -32,8 +32,8 @@ public class Boss : MonoBehaviour
         //Plays death animation if there iis no health
         if (health <= 0)
         {
-            anim.SetTrigger("death");
-        }
+             anim.SetTrigger("death");
+         }
 
         // give the player some time to recover before taking more damage !
         if (timeBtwDamage > 0)
@@ -56,7 +56,8 @@ public class Boss : MonoBehaviour
             }
         }
     }
-    public void TakeDamage (int damage)
+    
+        public void TakeDamage (int damage)
     {
         //it will take damage from the player
         health -= damage;

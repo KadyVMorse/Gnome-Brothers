@@ -20,6 +20,7 @@ public class FallingPlantform : MonoBehaviour
         if (col.collider.CompareTag("Player"))
         {
             StartCoroutine(Fall());
+           
         }
     }
 
