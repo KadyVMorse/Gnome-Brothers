@@ -19,7 +19,7 @@ public class EnemyDamage : MonoBehaviour
         // On triger with the spikes the player will take 1 damage and move 
         if (col.CompareTag("Player"))
         {
-            player.Damage(1);
+            player.Damage(2);
 
             StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
         }
