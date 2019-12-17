@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
-
+    //intgers of the health
     public int health;
     public int damage;
     private float timeBtwDamage = 1.5f;
 
-
+    //declaring your animator,health bar and setting boolean for death
     public Animator camAnim;
     public Slider healthBar;
     private Animator anim;
@@ -18,6 +18,7 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
+        //find the dragon tag and attactchs animation
         FindObjectOfType<AudioManager>().Play("Dragon");
         anim = GetComponent<Animator>();
     }

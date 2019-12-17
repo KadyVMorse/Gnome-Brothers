@@ -183,8 +183,7 @@ public class Player : MonoBehaviour
         // damage done by spikes
         curHealth -= dmg;
 
-        //Plays the animation 
-        gameObject.GetComponent<Animation>().Play("Player_RedFlash");
+        
     }
 
     void OnTriggerEnter2D(Collider2D col)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DashBehaviour : StateMachineBehaviour
 {
+    //declares the floats
     public float timer;
     public float miniTime;
     public float maxTime;

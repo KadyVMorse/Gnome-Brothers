@@ -15,8 +15,9 @@ public class EnemyDamage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        //plays the audio of mini
         FindObjectOfType<AudioManager>().Play("Mini");
-        // On triger with the spikes the player will take 1 damage and move 
+        // On triger with the spikes the player will take 2 damage and move 
         if (col.CompareTag("Player"))
         {
             player.Damage(2);

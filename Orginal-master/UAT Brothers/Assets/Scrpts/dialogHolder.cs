@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dialogHolder : MonoBehaviour
 {
-
+    //declares the dialouge
     public string dialogue;
     private DialogueManager dMAn;
 
@@ -25,6 +25,7 @@ public class dialogHolder : MonoBehaviour
     {
         if(other.gameObject.name == "Player")
         {
+            //If down arrow is pressed then it will show the dialouge
             if (Input.GetKeyUp(KeyCode.DownArrow))
             {
                 // dMAn.ShowBox(dialogue);
